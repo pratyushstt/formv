@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Bootstrap ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Fa Fa ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--My CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body class="bg-secondary">
+    
+    
+    <div class="jumbotron bg-dark text-center text-success border-bottom-success" role="alert">
+        <h1>Form Validation</h1>
+    </div>
+
+    <div class="container bg-white shadow shadow-sm rounded p-2 mb-3">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputFname">First Name</i>&nbsp;<i id="msg-fn-1" class="bi bi-x-circle-fill text-danger d-none"></i><i id="msg-fn-2" class="bi bi-check-circle-fill text-success d-none"></i></label>
+                    <input type="text" class="form-control" id="inputFname">
+                    <span id="msg-fn" class="p-1 small text-danger my-1"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputLname">Last Name&nbsp;<i id="msg-ln-1" class="bi bi-x-circle-fill text-danger d-none"></i><i id="msg-ln-2" class="bi bi-check-circle-fill text-success d-none"></i></label>
+                    <input type="text" class="form-control" id="inputLname">
+                    <span id="msg-ln" class="p-1 small text-danger my-1"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email&nbsp;<i id="msg-em-1" class="bi bi-x-circle-fill text-danger d-none"></i><i id="msg-em-2" class="bi bi-check-circle-fill text-success d-none"></i></label>
+                    <input type="email" class="form-control" id="inputEmail">
+                    <span id="msg-em" class="p-1 small text-danger my-1"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword">Password&nbsp;<i id="msg-pw-1" class="bi bi-x-circle-fill text-danger d-none"></i><i id="msg-pw-2" class="bi bi-check-circle-fill text-success d-none"></i></label>
+                    <input type="password" class="form-control" id="inputPassword">
+                    <span id="msg-pw" class="p-1 small text-danger my-1"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address&nbsp;<i id="msg-ad-1" class="bi bi-x-circle-fill text-danger d-none"></i><i id="msg-ad-2" class="bi bi-check-circle-fill text-success d-none"></i></label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <span id="msg-ad" class="p-1 small text-danger my-1"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City&nbsp;<i id="msg-ct-1" class="bi bi-x-circle-fill text-danger d-none"></i><i id="msg-ct-2" class="bi bi-check-circle-fill text-success d-none"></i></label>
+                    <input type="text" class="form-control" id="inputCity">
+                    <span id="msg-ct" class="p-1 small text-danger my-1"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State&nbsp;<i id="msg-st-1" class="bi bi-x-circle-fill text-danger d-none"></i><i id="msg-st-2" class="bi bi-check-circle-fill text-success d-none"></i></label>
+                    <input type="text" class="form-control" id="inputState">
+                    <span id="msg-st" class="p-1 small text-danger my-1"></span>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip&nbsp;<i id="msg-zp-1" class="bi bi-x-circle-fill text-danger d-none"></i><i id="msg-zp-2" class="bi bi-check-circle-fill text-success d-none"></i></label>
+                    <input type="text" class="form-control" id="inputZip" maxlength="6">
+                    <span id="msg-zp" class="p-1 small text-danger my-1"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" onclick="checkFunc();">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                   </label>
+                </div>
+            </div>
+            <div class="form-row">
+                <button type="submit" id="submitBtn" class="btn btn-primary mx-auto" disabled>Sign in</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
